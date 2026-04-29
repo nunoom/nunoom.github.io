@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080c14"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff88" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00ccff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#00ff88" stop-opacity="0.18"/>
+      <stop offset="70%" stop-color="#00ccff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect width="900" height="1200" fill="url(#glow)"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.25" stroke="#00ff88" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 120 H900"/>
+    <path d="M0 240 H900"/>
+    <path d="M0 360 H900"/>
+    <path d="M0 480 H900"/>
+    <path d="M0 600 H900"/>
+    <path d="M0 720 H900"/>
+    <path d="M0 840 H900"/>
+    <path d="M0 960 H900"/>
+    <path d="M0 1080 H900"/>
+
+    <path d="M120 0 V1200"/>
+    <path d="M240 0 V1200"/>
+    <path d="M360 0 V1200"/>
+    <path d="M480 0 V1200"/>
+    <path d="M600 0 V1200"/>
+    <path d="M720 0 V1200"/>
+    <path d="M840 0 V1200"/>
+  </g>
+
+  <!-- top accent line -->
+  <rect x="0" y="0" width="900" height="6" fill="url(#accent)" opacity="0.9"/>
+
+  <!-- monogram -->
+  <g font-family="JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" font-weight="700">
+    <text x="72" y="160" font-size="64" fill="#00ff88">NM</text>
+    <text x="72" y="210" font-size="18" fill="#64748b" letter-spacing="4">PORTRAIT</text>
+  </g>
+
+  <!-- diagonal highlights -->
+  <path d="M-80 1020 L980 160" stroke="#00ff88" stroke-opacity="0.12" stroke-width="10"/>
+  <path d="M-120 1120 L1020 220" stroke="#00ccff" stroke-opacity="0.10" stroke-width="6"/>
+</svg>
